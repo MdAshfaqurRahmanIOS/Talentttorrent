@@ -14,6 +14,10 @@
 		367542D2261635730049A74A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 367542D1261635730049A74A /* Assets.xcassets */; };
 		367542D5261635730049A74A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367542D3261635730049A74A /* LaunchScreen.storyboard */; };
 		367542E3261650800049A74A /* ExpertListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367542E2261650800049A74A /* ExpertListingViewController.swift */; };
+		367542E7261657540049A74A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367542E5261657540049A74A /* Home.storyboard */; };
+		367542EB261657B70049A74A /* Browse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367542EA261657B70049A74A /* Browse.storyboard */; };
+		367542F0261657E70049A74A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367542EE261657E70049A74A /* Settings.storyboard */; };
+		367542F32616580F0049A74A /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367542F22616580F0049A74A /* Dashboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		367542D4261635730049A74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		367542D6261635730049A74A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		367542E2261650800049A74A /* ExpertListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpertListingViewController.swift; sourceTree = "<group>"; };
+		367542E6261657540049A74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Talentttorrent/View/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		367542EA261657B70049A74A /* Browse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Browse.storyboard; sourceTree = "<group>"; };
+		367542EF261657E70049A74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Talentttorrent/View/Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
+		367542F22616580F0049A74A /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				367542CE2616354F0049A74A /* Main.storyboard */,
+				367542E5261657540049A74A /* Home.storyboard */,
+				367542EA261657B70049A74A /* Browse.storyboard */,
+				367542EE261657E70049A74A /* Settings.storyboard */,
+				367542F22616580F0049A74A /* Dashboard.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -152,8 +164,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				367542D5261635730049A74A /* LaunchScreen.storyboard in Resources */,
+				367542EB261657B70049A74A /* Browse.storyboard in Resources */,
 				367542D2261635730049A74A /* Assets.xcassets in Resources */,
+				367542F0261657E70049A74A /* Settings.storyboard in Resources */,
 				367542D02616354F0049A74A /* Main.storyboard in Resources */,
+				367542F32616580F0049A74A /* Dashboard.storyboard in Resources */,
+				367542E7261657540049A74A /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +204,22 @@
 				367542D4261635730049A74A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		367542E5261657540049A74A /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				367542E6261657540049A74A /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		367542EE261657E70049A74A /* Settings.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				367542EF261657E70049A74A /* Base */,
+			);
+			name = Settings.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

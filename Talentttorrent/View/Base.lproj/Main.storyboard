@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Browse-->
         <scene sceneID="fHt-mO-1ms">
             <objects>
                 <viewController id="sEQ-k1-sse" sceneMemberID="viewController">
@@ -18,29 +18,69 @@
                         <viewLayoutGuide key="safeArea" id="K78-Ht-U6X"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="5lx-ny-fdV"/>
+                    <navigationItem key="navigationItem" title="Browse" id="5lx-ny-fdV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJv-N8-jTm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1839.1304347826087" y="-858.48214285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="Jvc-B0-0R8">
             <objects>
-                <viewController id="xmq-ve-qaP" sceneMemberID="viewController">
+                <viewController id="xmq-ve-qaP" customClass="HomeViewController" customModule="Talentttorrent" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fGR-rZ-Y8l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ne9-tE-1tn">
+                                <rect key="frame" x="62" y="386" width="290" height="124"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="290" id="0Q4-bs-ZC0"/>
+                                    <constraint firstAttribute="height" constant="124" id="2BB-yG-jsI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="36"/>
+                                <state key="normal" title="Expert Listing">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="expertListingButton:" destination="xmq-ve-qaP" eventType="touchUpInside" id="pPO-WK-cMl"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="tdm-HX-7XS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ne9-tE-1tn" firstAttribute="centerY" secondItem="fGR-rZ-Y8l" secondAttribute="centerY" id="bLI-uv-2LC"/>
+                            <constraint firstItem="Ne9-tE-1tn" firstAttribute="centerX" secondItem="fGR-rZ-Y8l" secondAttribute="centerX" id="d4k-l3-aIF"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zIq-fT-Fvv"/>
+                    <navigationItem key="navigationItem" title="Home" id="zIq-fT-Fvv"/>
+                    <connections>
+                        <segue destination="bLN-Rb-pe2" kind="show" identifier="homeToExpertListing" id="EOy-uO-tAe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="asn-W2-xJy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1839.1304347826087" y="-1516.0714285714284"/>
         </scene>
-        <!--View Controller-->
+        <!--Expert Listing-->
+        <scene sceneID="HiY-B4-fpE">
+            <objects>
+                <viewController id="bLN-Rb-pe2" customClass="ExpertListingViewController" customModule="Talentttorrent" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QCc-Pt-MUS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dUb-vg-K8P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Expert Listing" id="Jvz-cc-Ebq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVx-44-Bdl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2628" y="-1516"/>
+        </scene>
+        <!--Dashboard-->
         <scene sceneID="BeM-ka-TSX">
             <objects>
                 <viewController id="TrE-zu-hav" sceneMemberID="viewController">
@@ -50,7 +90,7 @@
                         <viewLayoutGuide key="safeArea" id="Shb-Xf-dA1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KEd-KO-z73"/>
+                    <navigationItem key="navigationItem" title="Dashboard" id="KEd-KO-z73"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMY-tI-YVl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +116,7 @@
             </objects>
             <point key="canvasLocation" x="-842" y="-110"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting-->
         <scene sceneID="QwW-ok-jZM">
             <objects>
                 <viewController id="xfg-MX-jMX" sceneMemberID="viewController">
@@ -86,7 +126,7 @@
                         <viewLayoutGuide key="safeArea" id="ned-K8-uTW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="k7y-MY-2jJ"/>
+                    <navigationItem key="navigationItem" title="Setting" id="k7y-MY-2jJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="krw-LC-hKB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -134,7 +174,7 @@
         <scene sceneID="PNZ-Qh-gNB">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WpI-we-gLK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Setting" image="circle.grid.hex" catalog="system" id="cz6-xg-kjB"/>
+                    <tabBarItem key="tabBarItem" title="Setting" image="circles.hexagongrid.fill" catalog="system" id="cz6-xg-kjB"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zFJ-MZ-bKF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -170,10 +210,16 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle.grid.hex" catalog="system" width="128" height="112"/>
+        <image name="circles.hexagongrid.fill" catalog="system" width="128" height="112"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="rectangle.grid.2x2" catalog="system" width="128" height="99"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

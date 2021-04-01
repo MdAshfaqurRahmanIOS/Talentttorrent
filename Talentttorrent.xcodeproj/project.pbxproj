@@ -18,6 +18,10 @@
 		367542EB261657B70049A74A /* Browse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367542EA261657B70049A74A /* Browse.storyboard */; };
 		367542F0261657E70049A74A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367542EE261657E70049A74A /* Settings.storyboard */; };
 		367542F32616580F0049A74A /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367542F22616580F0049A74A /* Dashboard.storyboard */; };
+		367542F8261659B90049A74A /* ExpertListing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 367542F6261659B90049A74A /* ExpertListing.storyboard */; };
+		367542FC26165B0A0049A74A /* JSONData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367542FB26165B0A0049A74A /* JSONData.swift */; };
+		367542FF26165B4B0049A74A /* JSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367542FE26165B4B0049A74A /* JSONModel.swift */; };
+		3675430226165B6A0049A74A /* JSONManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3675430126165B6A0049A74A /* JSONManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		367542EA261657B70049A74A /* Browse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Browse.storyboard; sourceTree = "<group>"; };
 		367542EF261657E70049A74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Talentttorrent/View/Base.lproj/Settings.storyboard; sourceTree = "<group>"; };
 		367542F22616580F0049A74A /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		367542F7261659B90049A74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Talentttorrent/View/Talentttorrent/View/Base.lproj/ExpertListing.storyboard; sourceTree = "<group>"; };
+		367542FB26165B0A0049A74A /* JSONData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONData.swift; sourceTree = "<group>"; };
+		367542FE26165B4B0049A74A /* JSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONModel.swift; sourceTree = "<group>"; };
+		3675430126165B6A0049A74A /* JSONManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,9 @@
 		367542DD26164A1C0049A74A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3675430126165B6A0049A74A /* JSONManager.swift */,
+				367542FE26165B4B0049A74A /* JSONModel.swift */,
+				367542FB26165B0A0049A74A /* JSONData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +101,7 @@
 			children = (
 				367542CE2616354F0049A74A /* Main.storyboard */,
 				367542E5261657540049A74A /* Home.storyboard */,
+				367542F6261659B90049A74A /* ExpertListing.storyboard */,
 				367542EA261657B70049A74A /* Browse.storyboard */,
 				367542EE261657E70049A74A /* Settings.storyboard */,
 				367542F22616580F0049A74A /* Dashboard.storyboard */,
@@ -164,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				367542D5261635730049A74A /* LaunchScreen.storyboard in Resources */,
+				367542F8261659B90049A74A /* ExpertListing.storyboard in Resources */,
 				367542EB261657B70049A74A /* Browse.storyboard in Resources */,
 				367542D2261635730049A74A /* Assets.xcassets in Resources */,
 				367542F0261657E70049A74A /* Settings.storyboard in Resources */,
@@ -181,9 +194,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				367542CD2616354F0049A74A /* HomeViewController.swift in Sources */,
+				3675430226165B6A0049A74A /* JSONManager.swift in Sources */,
 				367542C92616354F0049A74A /* AppDelegate.swift in Sources */,
+				367542FC26165B0A0049A74A /* JSONData.swift in Sources */,
 				367542CB2616354F0049A74A /* SceneDelegate.swift in Sources */,
 				367542E3261650800049A74A /* ExpertListingViewController.swift in Sources */,
+				367542FF26165B4B0049A74A /* JSONModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +236,14 @@
 				367542EF261657E70049A74A /* Base */,
 			);
 			name = Settings.storyboard;
+			sourceTree = "<group>";
+		};
+		367542F6261659B90049A74A /* ExpertListing.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				367542F7261659B90049A74A /* Base */,
+			);
+			name = ExpertListing.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

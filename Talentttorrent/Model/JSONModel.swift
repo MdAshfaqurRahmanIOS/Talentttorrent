@@ -8,9 +8,10 @@
 import UIKit
 
 struct JSONModel {
-    let data: [Data]
+//    let success: Bool?
+    let data: [Datas]
+//    let meta: Meta
 //    var image: [UIImage]
-//    let title: String
 }
 
 

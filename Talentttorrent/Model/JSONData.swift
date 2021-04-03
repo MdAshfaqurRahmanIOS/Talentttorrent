@@ -5,15 +5,16 @@
 //  Created by Md Ashfaqur Rahman on 2/4/21.
 //
 
+
 import Foundation
 
 struct JSONData: Codable {
     let success: Bool?
-    let data: [Data]
+    let data: [Datas]
     let meta: Meta
 }
 
-struct Data: Codable {
+struct Datas: Codable {
     let id: Int?
     let first_name: String?
     let last_name: String?
@@ -43,7 +44,7 @@ struct Profile: Codable {
     let phone: String?
     let qualification: String?
     let experience: String?
-    let skills: [Array<String>]?
+    let skills: [String]?
     let business_number: String?
     let cover_letter: String?
     let job_title: String?
@@ -55,5 +56,5 @@ struct Profile: Codable {
     let country: String?
     let created_at: String?
     let updated_at: String?
-    
 }
+

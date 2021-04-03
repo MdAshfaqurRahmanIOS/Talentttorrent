@@ -14,7 +14,28 @@ class ExpertListingTableViewCell: UITableViewCell {
     @IBOutlet weak var country_name: UILabel!
     @IBOutlet weak var type_about: UILabel!
     @IBOutlet weak var designation_qualification: UILabel!
-    @IBOutlet weak var skills: UILabel!
+    
+    
+    @IBOutlet weak var skill_01: UILabel!
+    @IBOutlet weak var skill_02: UILabel!
+    @IBOutlet weak var skill_03: UILabel!
+    @IBOutlet weak var skill_04: UILabel!
+    @IBOutlet weak var skill_05: UILabel!
+    @IBOutlet weak var skill_06: UILabel!
+    @IBOutlet weak var skill_07: UILabel!
+    @IBOutlet weak var skill_08: UILabel!
+    @IBOutlet weak var skill_09: UILabel!
+    @IBOutlet weak var skill_10: UILabel!
+    @IBOutlet weak var skill_11: UILabel!
+    @IBOutlet weak var skill_12: UILabel!
+    @IBOutlet weak var skill_13: UILabel!
+    @IBOutlet weak var skill_14: UILabel!
+    @IBOutlet weak var skill_15: UILabel!
+    @IBOutlet weak var skill_16: UILabel!
+    @IBOutlet weak var skill_17: UILabel!
+    @IBOutlet weak var skill_18: UILabel!
+    @IBOutlet weak var skill_19: UILabel!
+    @IBOutlet weak var skill_20: UILabel!
     
     
     

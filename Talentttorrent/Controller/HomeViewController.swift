@@ -8,43 +8,33 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    
-    @IBOutlet weak var testLabel: UILabel!
-    
-    var jsonManager = JSONManager()
+    //TODO: Declear Variable for storing data from Delegation Method
     var dataContainerArray = [Datas]()
+    var jsonManager = JSONManager()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         jsonManager.delegate = self
         jsonManager.addFullURL(lastPart: "experts")
     }
-    
-
 }
+//MARK: - Get Data & Set Home Array
 extension HomeViewController: DataTakenProtocol {
+    //TODO: Delegation mathod get data from JSONManager
     func containDataFromAPI(jsonModel: JSONModel) {
         DispatchQueue.main.async {
-            print("1111111111111111")
             print(jsonModel.data[0].first_name ?? "123")
-            
-            self.testLabel.text = jsonModel.data[0].first_name
             self.dataContainerArray = jsonModel.data
-    
-            //            self.articlesArray = jsonModel.articles
-            //            self.newsTableView.reloadData()
         }
     }
 }
-
+//MARK: - Button Action
 extension HomeViewController {
-    @IBAction func refreshButtonAction(_ sender: UIButton) {
-        jsonManager.addFullURL(lastPart: "experts")
-    }
+    //TODO: Go to ExpertListing Screen Button Action
     @IBAction func expertListingButton(_ sender: UIButton) {
         performSegue(withIdentifier: "homeToExpertListing", sender: self)
     }
+    //TODO: Before go ExpertListing Screen send Data there
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "homeToExpertListing" {
             let expertListingVC = segue.destination as! ExpertListingViewController
